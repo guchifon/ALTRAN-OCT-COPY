@@ -1,2 +1,2 @@
-# ALTRAN-OCT-COPY
-Copia del repo de Anthanh Pham
+# altran-oct
+Altran playground project

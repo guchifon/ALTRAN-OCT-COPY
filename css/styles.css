@@ -1,0 +1,159 @@
+h1 {
+  color: red;
+  text-align: center;
+}
+
+span+span {
+  /* */
+}
+
+span.some-class {}
+
+.some-class.other-class {}
+
+.some-class:hover {}
+
+
+/* PRECEDENCIA */
+
+
+/*
+tag class id inline
+1    0     1   0
+0    1     1   0
+*/
+
+span#same-span {
+  color: green;
+}
+
+#same-span.same-span {
+  color: green;
+}
+
+.same-span.same-span-other {
+  color: blue;
+}
+
+
+/*
+tag class id inline
+0    1     0   0
+1    1     0   0
+*/
+
+.same-span {
+  color: blue;
+}
+
+span.same-span {
+  color: red;
+}
+
+header {
+  background-color: rgba(255, 0, 255, 0.1);
+}
+
+#cajas div {
+  /* width: 30px; */
+}
+
+#cajas div:nth-child(1) {
+  background-color: red;
+}
+
+#cajas div:nth-child(2) {
+  background-color: blue;
+}
+
+#cajas div:nth-child(3) {
+  background-color: green;
+}
+
+#cajas div:nth-child(4) {
+  background-color: yellow;
+}
+
+#box-model {
+  padding: 20px;
+  border: 5px solid red;
+  margin: 20px;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding: 10px 5px 10px 25px;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+#background .bg1 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  background-image: url(./example-bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+/* TRANSITIONS */
+
+.original {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  transition: width 2s ease-in, border-color 2s linear 1s;
+}
+
+.original:hover {
+  width: 200px;
+  border-color: red;
+}
+
+
+/* ANIMATIONS */
+
+#animation .box1 {
+  height: 100px;
+  width: 100px;
+  animation-delay: 3s;
+
+  animation: exampleAnimation 5s;
+
+  -webkit-animation: exampleAnimation 5s;
+  -moz-animation: exampleAnimation 5s;
+  -ms-animation: exampleAnimation 5s;
+  -o-animation: exampleAnimation 5s;
+
+  animation-iteration-count: infinite;
+}
+
+@keyframes exampleAnimation {
+  0% {
+    background: red;
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1.1) rotate(45deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(45deg) translate(10px, 40px);
+    background: yellow;
+  }
+  100% {
+    transform: scale(1.1) rotate(45deg) translate(10px, 40px);
+    background: green;
+  }
+}

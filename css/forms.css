@@ -1,0 +1,98 @@
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+}
+
+.form-input input.invalid,
+.form-input textarea.invalid,
+.form-input select.invalid {
+  border-color: red;
+}
+
+.form-input input.success,
+.form-input textarea.success,
+.form-input select.success {
+  border-color: green;
+}
+
+.form-input {
+  width: 90%;
+  margin: 15px auto;
+}
+
+.form-input label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.form-input input,
+.form-input textarea {
+  width: 90%;
+  padding: 5px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+}
+
+.form-input input:hover,
+.form-input textarea:hover {
+  border-style: dashed;
+}
+
+.form-input input:focus,
+.form-input textarea:focus {
+  border-color: lightblue;
+}
+
+select {
+  width: 90%;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+}
+
+.form-input-check {
+  display: inline-block;
+  width: auto;
+}
+
+.form-input-check input {
+  width: auto;
+}
+
+.form-input-check input[type="radio"] {
+  font-weight: bold;
+}
+
+form button {
+  border: 2px solid grey;
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+  /* transition: all 0.3s; */
+  border-radius: 5px;
+}
+
+form button:hover {
+  border-color: lightgreen;
+  background-color: green;
+  color: white;
+}
+
+@media screen and (min-width: 620px) {
+  .form-input {
+    width: 70%;
+    margin: 5px auto;
+  }
+  .form-input label {
+    width: 70px;
+    text-align: right;
+  }
+
+  .form-input input,
+  .form-input textarea {
+    width: 70%;
+  }
+
+  select {
+    width: 74%;
+  }
+}
