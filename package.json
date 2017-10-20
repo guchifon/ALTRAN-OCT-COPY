@@ -1,5 +1,5 @@
 {
-  "name": "altran-oct",
+  "name": "ALTRAN-OCT-COPY",
   "version": "0.0.1",
   "description": "Example project for Altran sessions",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anthanh/altran-oct.git"
+    "url": "git+https://github.com/guchifon/ALTRAN-OCT-COPY.git"
   },
   "keywords": [
     "html",
